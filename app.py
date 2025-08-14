@@ -13,7 +13,7 @@ df = joblib.load("Pickle Files/data.pkl")
 
 clf_model = joblib.load("Pickle Files/classification_model.pkl")
 
-reg_model = joblib.load("C:\\Users\\mitan\\Downloads\\regression_model.pkl")
+reg_model = joblib.load("Pickle Files/regression_model.pkl")
 import streamlit as st
 
 # Custom pastel pink background
@@ -102,7 +102,7 @@ def EDA():
     st.divider()
 
     st.header("📝Univariate Analysis")
-    st.image("C:\\Users\\mitan\\Downloads\\subplots1.png", caption="Age And Gender", use_container_width=True)
+    st.image("Images/subplots1.png", caption="Age And Gender", use_container_width=True)
     col1, col2 = st.columns(2)
 
     with col1:
@@ -118,11 +118,11 @@ def EDA():
         - Female: `19.79%`
         - Other: `1.29%`
         """) 
-    st.image("C:\\Users\\mitan\\Downloads\\subplots2.png", caption="Employee distribution and Country comparision", use_container_width=True)
+    st.image("Images/subplots2.png", caption="Employee distribution and Country comparision", use_container_width=True)
     st.divider()
-    st.image("C:\\Users\\mitan\\Downloads\\subplots3.png", caption="More info about respondent", use_container_width=True)
+    st.image("Images/subplots3.png", caption="More info about respondent", use_container_width=True)
     st.divider()
-    st.image("C:\\Users\\mitan\\Downloads\\subplots4.png", caption="Views on mental and physical health", use_container_width=True)
+    st.image("Images/subplots4.png", caption="Views on mental and physical health", use_container_width=True)
     col1, col2 = st.columns(2)
     with col1:
         st.markdown("""
@@ -133,7 +133,7 @@ def EDA():
         • A large percentage of people would not prefer bringing Mental health issues up in meetings
         """)
     st.divider()
-    st.image("C:\\Users\\mitan\\Downloads\\subplots5.png", use_container_width=True)
+    st.image("Images/subplots5.png", use_container_width=True)
     col1, col2 = st.columns(2)
     with col1:
         st.markdown("""
@@ -144,7 +144,7 @@ def EDA():
         • It is observed that many feel comfortable talking to their supervisors about mental health conditions
         """)
     st.divider()
-    st.image("C:\\Users\\mitan\\Downloads\\subplots6.png", use_container_width=True)
+    st.image("Images/subplots6.png", use_container_width=True)
 
     col1, col2 = st.columns(2)
     with col1:
@@ -158,7 +158,7 @@ def EDA():
     st.divider()
 
     st.header("Bivariate Analysis")
-    st.image("C:\\Users\\mitan\\Downloads\\subplots7.png",caption="Analyzing various columns wrt treatment column", use_container_width=True)
+    st.image("Images/subplots7.png",caption="Analyzing various columns wrt treatment column", use_container_width=True)
     col1, col2 = st.columns(2)
     with col1:
         st.markdown("""
@@ -171,7 +171,7 @@ def EDA():
         -- Country vs Treatment: Majority of responses come from the US, where treatment-seeking is higher than non-seeking.
         """)
     st.divider()
-    st.image("C:\\Users\\mitan\\Downloads\\subplots8.png", use_container_width=True)
+    st.image("Images/subplots8.png", use_container_width=True)
     col1, col2 = st.columns(2)
     with col1:
         st.markdown("""
@@ -182,7 +182,7 @@ def EDA():
         -- Mental vs Physical (by Age Group): Younger and middle-aged groups (20–39) mostly report uncertainty about whether mental health is taken as seriously as physical health.
         """)
     st.divider()
-    st.image("C:\\Users\\mitan\\Downloads\\subplots9.png", use_container_width=True)
+    st.image("Images/subplots9.png", use_container_width=True)
     col1,col2=st.columns(2)
     with col1:
         st.markdown("""
@@ -198,7 +198,7 @@ def EDA():
         """)
     st.divider()
     st.header("Multivariate Analysis")
-    st.image("C:\\Users\\mitan\\Downloads\\subplots10.png",caption="Correlation Heatmap", use_container_width=True)
+    st.image("Images/subplots10.png",caption="Correlation Heatmap", use_container_width=True)
     st.markdown("""
         -- Most features show weak correlations, indicating low multicollinearity,
                  but notable positive correlations exist between supervisor and coworkers (0.57), wellness_program and seek_help (0.62), 
@@ -220,7 +220,7 @@ def classification():
     st.markdown("""### **KNN Classification**""")
     st.write("Classifies based on the majority label among the closest data points in feature space.")
     st.code("Accuracy: 0.67\n AUC Score: 0.71")
-    st.image("C:\\Users\\mitan\\Downloads\\knn.png", caption="Accuracy vs K value", use_container_width=True)
+    st.image("Images/knn.png", caption="Accuracy vs K value", use_container_width=True)
 
 
     st.markdown("""### **XGB Classification**""")
@@ -232,7 +232,7 @@ def classification():
     st.write("An ensemble model that uses multiple decision trees to improve classification stability and accuracy.")
     st.code("Accuracy: 0.698\n AUC Score: 0.75\n F1 Score(weighted): 0.713")
 
-    st.image("C:\\Users\\mitan\\Downloads\\auc.png", caption="Comparision Of Models", use_container_width=True)
+    st.image("Images/auc.png", caption="Comparision Of Models", use_container_width=True)
     st.divider()
     st.markdown("### ✅ From the evaluation metrics it is evident that `XGB Classifiction` provides the best accuracy")
 
@@ -350,7 +350,7 @@ def regression():
     st.code("MAE:5.23 \n" \
     "MSE: 47.03\n" \
     "R² Score: 0.062")
-    st.image("C:\\Users\\mitan\\Downloads\\knnr.png", caption="R2 score vs K value", use_container_width=False)
+    st.image("Images/knnr.png", caption="R2 score vs K value", use_container_width=False)
 
     st.markdown("### ✅ By looking at the evaluation metrics, we can see that `Linear Regression` performs the best and will be used for prediction purposes.")
     st.divider()
@@ -463,16 +463,16 @@ def clustering():
     col1,col2=st.columns(2)
     with col1:
         st.markdown("### Kmeans")
-        st.image("C:\\Users\\mitan\\Downloads\\kmeanselb.png", caption="Elbow Method", use_container_width=False)
+        st.image("Images/kmeanselb.png", caption="Elbow Method", use_container_width=False)
         st.write("Best number of clusters would be '6' ")
-        st.image("C:\\Users\\mitan\\Downloads\\kmeans.png", caption="Clustering using Kmeans", use_container_width=False)
+        st.image("Images/kmeans.png", caption="Clustering using Kmeans", use_container_width=False)
         st.code("Silhouette Score:  0.43073913")
 
     with col2:
         st.markdown("### Agglomerative")
-        st.image("C:\\Users\\mitan\\Downloads\\agg.png", caption="Sihouette score comparision", use_container_width=False)
+        st.image("Images/agg.png", caption="Sihouette score comparision", use_container_width=False)
         st.write("Best number of clusters would be '3' ")
-        st.image("C:\\Users\\mitan\\Downloads\\aggcluster.png", caption="Clustering using Agglomerative/Hierarchial", use_container_width=False)
+        st.image("Images/aggcluster.png", caption="Clustering using Agglomerative/Hierarchial", use_container_width=False)
         st.code("Silhouette Score: 0.45951703")
 
     st.markdown("### ✅ From these scores, we can easily see that 'Agglomerative Clustering' provides better results")
@@ -507,5 +507,6 @@ pg = st.navigation([
   st.Page(clustering, title="Persona Clusters")
 ])
 pg.run()
+
 
 
