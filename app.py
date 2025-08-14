@@ -35,7 +35,7 @@ def footer():
     st.markdown("---")
     st.markdown("""
     <small> Model made and deployed by Mitanshi Sheth 💖🎀| 
-    [LinkedIn](www.linkedin.com/in/mitanshisheth) • 
+    [LinkedIn](www.linkedin.com/in/mitanshisheth/) • 
     [GitHub](https://github.com/mitanshisheth) • 
     [X](https://x.com/mitanshi__)</small>
     """, unsafe_allow_html=True)
@@ -507,6 +507,7 @@ pg = st.navigation([
   st.Page(clustering, title="Persona Clusters 📝")
 ])
 pg.run()
+
 
 
 
