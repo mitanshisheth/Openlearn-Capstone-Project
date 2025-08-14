@@ -9,7 +9,7 @@ from sklearn.preprocessing import StandardScaler
 import xgboost
 import joblib
 
-df = joblib.load(r"C:\\Users\\mitan\\Downloads\\data.pkl")
+df = joblib.load(r"Pickle File/data.pkl")
 
 clf_model = joblib.load(r"C:\\Users\\mitan\\Downloads\\classification_model.pkl")
 
@@ -507,3 +507,4 @@ pg = st.navigation([
   st.Page(clustering, title="Persona Clusters")
 ])
 pg.run()
+
