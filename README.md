@@ -95,7 +95,7 @@ An **interactive Streamlit web app** is deployed to allow HR teams, researchers,
 
 ---
 ## 🔗 Important Links
-[**Click here to view the Streamlit app**](   )
+[**Click here to view the Streamlit app**](https://openlearn-capstone-project-ffqxpxbc6h94a4fhhaz6uu.streamlit.app/)
 - **Technical Report:** [Link to Medium Blog](https://medium.com/@) 
 
 ---
