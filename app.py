@@ -9,11 +9,11 @@ from sklearn.preprocessing import StandardScaler
 import xgboost
 import joblib
 
-df = joblib.load(r"Pickle File/data.pkl")
+df = joblib.load("Pickle Files/data.pkl")
 
-clf_model = joblib.load(r"C:\\Users\\mitan\\Downloads\\classification_model.pkl")
+clf_model = joblib.load("Pickle Files/classification_model.pkl")
 
-reg_model = joblib.load(r"C:\\Users\\mitan\\Downloads\\regression_model.pkl")
+reg_model = joblib.load("C:\\Users\\mitan\\Downloads\\regression_model.pkl")
 import streamlit as st
 
 # Custom pastel pink background
@@ -507,4 +507,5 @@ pg = st.navigation([
   st.Page(clustering, title="Persona Clusters")
 ])
 pg.run()
+
 
