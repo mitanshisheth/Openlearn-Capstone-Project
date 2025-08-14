@@ -500,13 +500,14 @@ def clustering():
     footer()
 
 pg = st.navigation([
-  st.Page(Home, title="Dataset Visualization"),
-  st.Page(EDA, title="Exploratory Data Analysis"),
-  st.Page(classification, title="Classification Task"),
-  st.Page(regression, title="Regression Task"),
-  st.Page(clustering, title="Persona Clusters")
+  st.Page(Home, title="Home Page 🏠"),
+  st.Page(EDA, title="Exploratory Data Analysis 🔍"),
+  st.Page(classification, title="Classification Task 🔬"),
+  st.Page(regression, title="Regression Task 🏁"),
+  st.Page(clustering, title="Persona Clusters 📝")
 ])
 pg.run()
+
 
 
 
