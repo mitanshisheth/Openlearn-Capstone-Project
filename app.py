@@ -454,9 +454,9 @@ def clustering():
     st.write("Plots for the new componenets/features by these techniques-")
     col1,col2=st.columns(2)
     with col1:
-        st.image("C:\\Users\\mitan\\Downloads\\pca.png", caption="PCA", use_container_width=False)
+        st.image("Images/pca.png", caption="PCA", use_container_width=False)
     with col2:
-        st.image("C:\\Users\\mitan\\Downloads\\tsne.png", caption="t-SNE", use_container_width=False)
+        st.image("Images/tsne.png", caption="t-SNE", use_container_width=False)
 
     st.markdown("From these clusters we can see that `t-SNE` forms the best clusters")
     st.subheader("Finding ideal number of clusters for different models: ")
@@ -507,6 +507,7 @@ pg = st.navigation([
   st.Page(clustering, title="Persona Clusters 📝")
 ])
 pg.run()
+
 
 
 
