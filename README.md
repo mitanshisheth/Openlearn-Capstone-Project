@@ -96,7 +96,7 @@ An **interactive Streamlit web app** is deployed to allow HR teams, researchers,
 ---
 ## 🔗 Important Links
 [**Click here to view the Streamlit app**](https://openlearn-capstone-project-ffqxpxbc6h94a4fhhaz6uu.streamlit.app/)
-- **Technical Report:** [Link to Medium Blog]([https://medium.com/@](https://medium.com/@mitanshihs.ec.24/mental-heath-in-tech-machine-learning-analysis-persona-segmentation-e45628493737)) 
+- **Technical Report:** [Link to Medium Blog](https://medium.com/@mitanshihs.ec.24/mental-heath-in-tech-machine-learning-analysis-persona-segmentation-e45628493737) 
 
 ---
 
